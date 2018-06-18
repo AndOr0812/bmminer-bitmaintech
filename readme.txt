@@ -7,6 +7,24 @@ XILINX_OTHER_LIB_BASE_PATH=/home/XILINX/bin
 export XILINX_OTHER_LIB_BASE_PATH
 export XILINX_BASE_PATH
 
+OBS: 
+ If compiling on a armhf device : 
+ 1. apt-get update
+ 2. apt-get install build-essential git autoconf automake pkg-config libtool libcurl4-openssl-dev libncurses5-dev 
+ 3. apt-get install libusb-1.0-0-dev libudev-dev uthash-dev libjansson-dev  zlib1g-dev zlib1g  libc6-dev  dpkg-dev                 
+4. cd /home
+5. mkdir develop
+6. cd develop
+
+ XILINX_BASE_PATH=/usr
+ XILINX_OTHER_LIB_BASE_PATH=/usr     (this will only look for libz.a and nothing else -so if libz.a is found in /usr/libs then ok, if found somewhere else then copy it to /usr/libs)
+ 
+ export XILINX_OTHER_LIB_BASE_PATH
+ export XILINX_BASE_PATH
+
+
+
+
 How to compile:
 1. set miner type value
 ./setminertype S9
