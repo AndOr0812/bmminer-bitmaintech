@@ -23,6 +23,8 @@ OBS:
  export XILINX_BASE_PATH
 
 
+SEE ALSO : https://bitcointalk.org/index.php?topic=4030824.0
+
 
 
 How to compile:
