@@ -11513,8 +11513,8 @@ void set_Hardware_version(unsigned int value)
             .reg_data                       = 0,
             .chip_address                   = 0x04,
             .reg_address                    = 0,
-            .chain_min_freq                 = 400,
-            .chain_max_freq                 = 600,
+            .chain_min_freq                 = 125,
+            .chain_max_freq                 = 1175,
         };
         c5_config.crc = CRC16((uint8_t *)(&c5_config), sizeof(c5_config)-2);
 
